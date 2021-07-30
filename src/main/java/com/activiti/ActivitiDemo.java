@@ -174,4 +174,11 @@ public class ActivitiDemo {
         String delopmentId = "1";
         repositoryService.deleteDeployment(delopmentId);
     }
+    public void getDeployment(){
+//        得到引擎
+//
+//
+//
+//
+    }
 }
