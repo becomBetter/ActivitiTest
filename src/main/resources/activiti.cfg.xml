@@ -14,12 +14,24 @@
 <!--数据库驱动-->
         <property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
 <!--数据库连接-->
-        <property name="jdbcUrl" value="jdbc:mysql:///activiti"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///activiti?characterEncoding=UTF-8"/>
 <!--数据库用户名-->
         <property name="jdbcUsername" value="root"/>
 <!--数据库密码-->
-        <property name="jdbcPassword" value="123456"/>
+        <property name="jdbcPassword" value="123456789"/>
 <!--activiti数据库表在生成时的策略 如果数据库中已存在相应的表则直接使用，如果不存在则创建-->
         <property name="databaseSchemaUpdate" value="true"/>
-    </bean>
+</bean>
+<!--    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">-->
+<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql:///activiti"/>-->
+<!--        <property name="username" value="root"/>-->
+<!--        <property name="password" value="123456"/>-->
+<!--        <property name="maxActive" value="3"/>-->
+<!--        <property name="maxIdle" value="1"/>-->
+<!--    </bean>-->
+<!--    <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">-->
+<!--        <property name="dataSource" value="dataSource"/>-->
+<!--        <property name="databaseSchemaUpdate" value="true"/>-->
+<!--    </bean>-->
 </beans>
